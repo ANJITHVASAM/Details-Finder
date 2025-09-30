@@ -1,0 +1,1 @@
+INSERT INTO numbers (fullname,gender,age,mobile,details) VALUES ('Anjith','Male',21,'8498059957','1-110, Venugumatla, Gollapalli, Jagtial')

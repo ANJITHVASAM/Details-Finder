@@ -40,12 +40,13 @@ public class Numbers {
     public void setId(int id) {
         this.id = id;
     }
-    public String getName() {
+    public String getFullname() {
         return this.fullname;
     }
-    public void setName(String fullname) {
+    public void setFullname(String fullname) {
         this.fullname = fullname;
     }
+
     public String getGender() {
         return this.gender;
     }
@@ -58,17 +59,19 @@ public class Numbers {
     public void setAge(int age){
         this.age=age;
     }
-    public String getNumber(){
+    public String getMobile() {
         return this.mobile;
     }
-    public void setNumber(String mobile){
-        this.mobile=mobile;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
-    public String getAddress(){
+
+    public String getDetails() {
         return this.details;
     }
-    public void setAddress(String details){
-        this.details=details;
+    public void setDetails(String details) {
+        this.details = details;
     }
+
 
 }

@@ -35,3 +35,14 @@
     border: 1px solid rgb(0, 255, 0);
     cursor: pointer;
 }
+#AddData{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+}
+input{
+    background-color: #000000;
+    color: rgb(19, 214, 19);
+    border: 1px solid rgb(19, 214, 19);
+}

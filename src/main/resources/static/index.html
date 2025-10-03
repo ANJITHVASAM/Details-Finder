@@ -44,10 +44,9 @@
     <div class="container d-none" id="loginSection">
         <div class="details-finder d-flex flex-column">
             <button class="buttons" onclick="getAllData()">Get All Data</button>
-            <button class="buttons">Add Data</button>
-            <button class="buttons">Get Data By Id</button>
-            <button class="buttons">Put Data</button>
-            <button class="buttons">Delete Data</button>
+            <button class="buttons" onclick="addDataSection()">Add Data</button>
+            <button class="buttons" onclick="putDataSection()">Put Data</button>
+            <button class="buttons" onclick="deleteDataSection()">Delete Data</button>
             <div class="d-flex justify-content-end">
                 <button class="buttons" style="color: red;" onclick="loginSectionBack()">Back</button>
             </div>
@@ -61,6 +60,71 @@
         </div>
         <div class="d-flex justify-content-end">
             <button class="buttons" style="color: red;" onclick="getAllDataBack()">Back</button>
+        </div>
+    </div>
+    <div class="container d-none" id="addDataSection">
+        <div class="details-finder d-flex flex-column">
+            <div id="AddData">
+                <label for="name">Full Name</label>
+                <input class="mb-2" type="text" id="name" placeholder="Enter Full Name....">
+                <label for="gender">Gender</label>
+                <div class="d-flex">
+                    <input id="male" type="radio" name="gender" value="male" checked>
+                    <label for="male">Male</label>
+                </div>
+                <div class="d-flex mb-2">
+                    <input id="female" type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <label for="age">Age</label>
+                <input class="mb-2" type="number" id="age" placeholder="Enter Age....">
+                <label for="text">Phone Number</label>
+                <input class="mb-2" type="number" id="number" placeholder="Enter Phone Number....">
+                <label for="address">Address</label>
+                <input class="mb-2" type="text" id="address" placeholder="Enter Address....">
+                <button class="buttons" onclick="addData()">Add Data</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="buttons" style="color: red;" onclick="addDataBack()">Back</button>
+        </div>
+    </div>
+    <div class="container d-none" id="putDataSection">
+        <div class="details-finder d-flex flex-column">
+            <div id="AddData">
+                <label for="name1">Full Name</label>
+                <input class="mb-2" type="text" id="name1" placeholder="Enter Full Name....">
+                <label for="gender1">Gender</label>
+                <div class="d-flex">
+                    <input id="male1" type="radio" name="gender1" value="male1" checked>
+                    <label for="male1">Male</label>
+                </div>
+                <div class="d-flex mb-2">
+                    <input id="female1" type="radio" name="gender1" value="female1">
+                    <label for="female1">Female</label>
+                </div>
+                <label for="age1">Age</label>
+                <input class="mb-2" type="number" id="age1" placeholder="Enter Age....">
+                <label for="number1">Phone Number</label>
+                <input class="mb-2" type="number" id="number1" placeholder="Enter Phone Number....">
+                <label for="address1">Address</label>
+                <input class="mb-2" type="text" id="address1" placeholder="Enter Address....">
+                <button class="buttons" onclick="putData()">Put Data</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="buttons" style="color: red;" onclick="putDataBack()">Back</button>
+        </div>
+    </div>
+    <div class="container d-none" id="deleteDataSection">
+        <div class="details-finder d-flex flex-column">
+            <div id="AddData">
+                <input type="text" id="deleteNumber" placeholder="Enter Number to delete...">
+                <button class="buttons" onclick="deleteData()">Delete</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button class="buttons" style="color: red;" onclick="deleteDataBack()">Back</button>
         </div>
     </div>
 

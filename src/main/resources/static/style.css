@@ -35,6 +35,15 @@
     border: 1px solid rgb(0, 255, 0);
     cursor: pointer;
 }
+.backButton{
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(19, 214, 19);
+    background-color: yellow;
+    border: 1px solid rgb(19, 214, 19);
+}
 #AddData{
     display: flex;
     flex-direction: column;

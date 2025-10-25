@@ -84,7 +84,7 @@ function findByNumber(){
         return;
     }
     else{
-        let API_URL='http://127.0.0.1:4040/api/numbers/'+number;
+        let API_URL='https://unflamboyant-oswaldo-unsubservient.ngrok-free.dev/api/numbers/'+number;
         fetch(API_URL)
             .then(function(response){
                 return response.json();
@@ -113,7 +113,7 @@ function loginSectionBack(){
 function getAllData(){
     document.getElementById('getAllDataSection').classList.remove('d-none');
     loginSectionEl.classList.add('d-none');
-    let API_URL='http://127.0.0.1:4040/api/numbers';
+    let API_URL='https://unflamboyant-oswaldo-unsubservient.ngrok-free.dev/api/numbers';
     fetch(API_URL)
         .then(function(response){
             return response.json();
@@ -154,7 +154,7 @@ function addData(){
     let numberEl=document.getElementById('number');
     let addressEl=document.getElementById('address');
 
-    let API_URL='http://127.0.0.1:4040/api/numbers';
+    let API_URL='https://unflamboyant-oswaldo-unsubservient.ngrok-free.dev/api/numbers';
     let name='';
     if (!nameEl.value.trim()) {
         alert("Full name is required");
@@ -208,7 +208,7 @@ function putData(){
     let numberEl=document.getElementById('number1');
     let addressEl=document.getElementById('address1');
 
-    let API_URL=`http://127.0.0.1:4040/api/numbers/${numberEl.value}`;
+    let API_URL=`https://unflamboyant-oswaldo-unsubservient.ngrok-free.dev/api/numbers/${numberEl.value}`;
     let name='';
     if (!nameEl.value.trim()) {
         alert("Full name is required");
@@ -259,7 +259,7 @@ function deleteDataSection(){
 
 function deleteData(){
     let number=document.getElementById('deleteNumber');
-    let API_URL=`http://127.0.0.1:4040/api/numbers/${number.value}`;
+    let API_URL=`https://unflamboyant-oswaldo-unsubservient.ngrok-free.dev/api/numbers/${number.value}`;
     let options={
         method: "DELETE"
     };
